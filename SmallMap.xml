@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameDescriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Conquers.xsd">
+	<GameType>DynamicMultiPlayer</GameType>
+	<Game totalCycles="4">
+		<Board rows="2" columns="3"/>
+		<InitialFunds>2000</InitialFunds>
+		<Army>
+			<Unit type="Soldier" rank="1">
+				<Purchase>50</Purchase>
+				<MaxFirePower>100</MaxFirePower>
+				<CompetenceReduction>10</CompetenceReduction>				
+			</Unit>
+			<Unit type="Tank" rank="2">
+				<Purchase>150</Purchase>
+				<MaxFirePower>350</MaxFirePower>
+				<CompetenceReduction>30</CompetenceReduction>				
+			</Unit>			
+		</Army>
+		<Territories default-profit="0" default-army-threshold="10">
+			<Teritory id="1">
+				<Profit>300</Profit>
+				<ArmyThreshold>100</ArmyThreshold>
+			</Teritory>
+			<Teritory id="3">
+				<Profit>500</Profit>
+				<ArmyThreshold>50</ArmyThreshold>
+			</Teritory>
+			<Teritory id="5">
+				<Profit>300</Profit>
+				<ArmyThreshold>100</ArmyThreshold>
+			</Teritory>			
+		</Territories>
+	</Game>
+	<DynamicPlayers game-title="sample game" total-players="2"/>
+</GameDescriptor>

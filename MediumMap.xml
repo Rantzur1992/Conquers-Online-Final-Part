@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameDescriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Conquers.xsd">
+	<GameType>DynamicMultiPlayer</GameType>
+	<Game totalCycles="15">
+		<Board rows="8" columns="8"/>
+		<InitialFunds>3000</InitialFunds>
+		<Army>
+			<Unit type="Soldier" rank="1">
+				<Purchase>80</Purchase>
+				<MaxFirePower>100</MaxFirePower>
+				<CompetenceReduction>20</CompetenceReduction>				
+			</Unit>
+			<Unit type="Tank" rank="2">
+				<Purchase>150</Purchase>
+				<MaxFirePower>350</MaxFirePower>
+				<CompetenceReduction>30</CompetenceReduction>				
+			</Unit>	
+			<Unit type="Missile" rank="3">
+				<Purchase>300</Purchase>
+				<MaxFirePower>600</MaxFirePower>
+				<CompetenceReduction>70</CompetenceReduction>				
+			</Unit>						
+		</Army>
+		<Territories default-profit="0" default-army-threshold="10">
+			<Teritory id="1">
+				<Profit>100</Profit>
+				<ArmyThreshold>200</ArmyThreshold>
+			</Teritory>
+			<Teritory id="13">
+				<Profit>300</Profit>
+				<ArmyThreshold>150</ArmyThreshold>
+			</Teritory>
+			<Teritory id="15">
+				<Profit>250</Profit>
+				<ArmyThreshold>120</ArmyThreshold>
+			</Teritory>			
+			<Teritory id="11">
+				<Profit>2200</Profit>
+				<ArmyThreshold>1100</ArmyThreshold>
+			</Teritory>			
+			<Teritory id="63">
+				<Profit>10</Profit>
+				<ArmyThreshold>100</ArmyThreshold>
+			</Teritory>			
+			<Teritory id="25">
+				<Profit>100</Profit>
+				<ArmyThreshold>10</ArmyThreshold>
+			</Teritory>			
+			<Teritory id="36">
+				<Profit>10</Profit>
+				<ArmyThreshold>100</ArmyThreshold>
+			</Teritory>			
+			<Teritory id="48">
+				<Profit>20</Profit>
+				<ArmyThreshold>20</ArmyThreshold>
+			</Teritory>			
+			<Teritory id="49">
+				<Profit>2000</Profit>
+				<ArmyThreshold>1000</ArmyThreshold>
+			</Teritory>			
+			<Teritory id="50">
+				<Profit>200</Profit>
+				<ArmyThreshold>150</ArmyThreshold>
+			</Teritory>			
+		</Territories>
+	</Game>
+	<DynamicPlayers game-title="medium game" total-players="3"/>
+</GameDescriptor>
